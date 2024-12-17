@@ -1,3 +1,8 @@
+# Portfolio Website
+This is my attempt at learning some web development and creating my own website via code
+
+
+
 <<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

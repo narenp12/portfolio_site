@@ -20,16 +20,24 @@ const tab_data = [
         )
     },
     {
-        title: "Experience",
-        id: "experience",
+        title: "Education",
+        id: "education",
         content: (
             <ul className='font-med list-disc'>
                 <li>
-                    University of California, Los Angeles
+                    University of California, Los Angeles (UCLA)
                     <div className="text-gray-300">Bachelor of Science - Statistics and Data Science</div>
                     <div className="text-sm text-gray-400">2021 - 2025</div>
                 </li>
-                <li className='py-2'>
+            </ul>
+        )
+    },
+    {
+        title: "Experience",
+        id: "experience",
+        content: (
+            <ul className='font-medium list-disc'>
+                <li className=''>
                     Halliburton
                     <div className="text-gray-300">Data Science and Machine Learning Intern</div>
                     <div className="text-sm text-gray-400">June 2024 - Sep 2024</div>
@@ -38,43 +46,6 @@ const tab_data = [
                     Neoage Services
                     <div className="text-gray-300">Data Analyst Intern</div>
                     <div className="text-sm text-gray-400">June 2023 - Aug 2023</div>
-                </li>
-            </ul>
-        )
-    },
-    {
-        title: "Interests",
-        id: "interests",
-        content: (
-            <ul className='font-medium list-disc'>
-                <li>
-                    Sports
-                    <div className="text-gray-300">I'm a huge fan of sports and it's part of what led me to statistics as a career!
-                        This is easily the hobby that most people associate with me (other than statistics).
-                    </div>
-                    <div className="text-sm text-gray-400">Favorites: Football, American Football, Basketball</div>
-                </li>
-
-                <li className='py-2'>
-                     Teaching
-                    <div className="text-gray-300">
-                        I really enjoy learning, and so it isn't too much of a surprise that I enjoy when I can help others learn too.
-                        Happy to say I was able to participate in some education based clubs during my time at UCLA. I hope to be a teacher of some kind in the future.
-                    </div>
-                    <div className="text-sm text-gray-400">Obviously I love to teach about anything related to statistics, but I also like to participate in scientific education.</div>
-                </li>
-                <li className='py-2'>
-                    Music
-                    <div className="text-gray-300">
-                        I'm by no means musically talented, but I love to be a listener. I grew up listening to hip-hop and rap (shoutout DatPiff) so those genres have dominated my music taste for most of my life.
-                        I'm thankful for the existence of music streaming every day. I am always looking for music recommendations.
-                    </div>
-                </li>
-                <li className='py-2'>
-                    The Arts (in general)
-                    <div className="text-gray-300">
-                        While I am clearly a huge fan of STEM, I truly believe that it can only exist alongside the development of the arts. 
-                    </div>
                 </li>
             </ul>
         )
@@ -113,8 +84,8 @@ const AboutSection = () => {
                     </p>
                     <div className='flex flex-row-met-8'>
                         <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
+                        <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Education</TabButton>
                         <TabButton selectTab={() => handleTabChange("experience")} active={tab === "experience"}>Experience</TabButton>
-                        <TabButton selectTab={() => handleTabChange("interests")} active={tab === "interests"}>Interests</TabButton>
                     </div>
                     <div className='mt-8'>
                         {tab_data.find((t) => t.id === tab).content}

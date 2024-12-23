@@ -31,6 +31,7 @@ const Projects = () => {
                         title={project.title}
                         description={project.description}
                         imgURL={project.image}
+                        id = {project.id}
                     />
                 ))}
             </div>

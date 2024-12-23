@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff"/>
+    </marker>
+  </defs>
+  
+  <!-- Boxes -->
+  <rect x="50" y="20" width="300" height="60" rx="5" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <rect x="50" y="150" width="300" height="60" rx="5" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <rect x="50" y="280" width="300" height="60" rx="5" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <rect x="50" y="410" width="300" height="60" rx="5" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  
+  <!-- Text -->
+  <text x="200" y="55" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Input Data</text>
+  <text x="200" y="185" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Data Generator</text>
+  <text x="200" y="315" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Batches of Training Data</text>
+  <text x="200" y="445" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Train Neural Network Model</text>
+  
+  <!-- Arrows -->
+  <line x1="200" y1="90" x2="200" y2="140" stroke="#ffffff" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="220" x2="200" y2="270" stroke="#ffffff" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="350" x2="200" y2="400" stroke="#ffffff" stroke-width="3" marker-end="url(#arrowhead)"/>
+</svg>

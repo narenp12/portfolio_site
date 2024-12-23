@@ -1,8 +1,8 @@
 import React from 'react';
-import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/solid';
+import { EyeIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 
-const ProjectCard = ({ imgURL, title, description }) => {
+const ProjectCard = ({ imgURL, title, description, id }) => {
     return (
         <div className="bg-gray-800 rounded-xl overflow-hidden shadow-md">
             {/* Background Image */}
@@ -15,11 +15,12 @@ const ProjectCard = ({ imgURL, title, description }) => {
             >
                 {/* Overlay with Icons */}
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300">
+                    {/* Eye Icon visible only on hover */}
                     <Link
-                        href="/"
-                        className="mr-2 h-14 w-14 border-2 rounded-full border-gray-200 hover:border-white flex items-center justify-center"
+                        href={`/project${id}`}  // Correct way to dynamically create the route based on id
+                        className="mr-2 h-14 w-14 border-2 rounded-full border-gray-200 hover:border-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     >
-                        <CodeBracketIcon className="h-10 w-10 text-gray-200 hover:text-white" />
+                        <EyeIcon className="h-10 w-10 text-gray-200 hover:text-white" />
                     </Link>
                 </div>
             </div>

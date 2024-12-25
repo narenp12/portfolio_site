@@ -12,7 +12,7 @@ const projectsData = [
     {
         id: 2,
         title: "Data Generator",
-        description: "For when you have an amount of data that's way too big, but you still want to use it all!",
+        description: "With such large amounts of data that can’t fit in memory alone, how can we use all of it for training?",
         image: "/project/datagen.jpg",
         tag: ["All", "Python"],
     },

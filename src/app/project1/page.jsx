@@ -18,7 +18,7 @@ export default function Project1() {
 
             {/* Project Tagline */}
             <p className="text-xl text-white mb-8 text-center">
-                How do we identify potentially dangerous situations and act quickly in real time?
+                With such large amounts of data that can’t fit in memory alone, how can we use all of it for training?
             </p>
 
             {/* Project Image */}
@@ -43,7 +43,7 @@ export default function Project1() {
                     <span className="font-semibold"> How do we set up an alert system so that when the sensor has abnormal readings, we can immediately take a look at the equipment to prevent accidents?</span>
                 </p>
 
-                <p className="text-lg mb-6">
+                <p className="text-lg">
                     Traditional statistical methods have many definitions for an outlier we could use to identify those readings.
                     However, with so much sensor data, it might be better to use a larger scale ML model to identify these in real time so prompt action can be taken.
                 </p>
@@ -57,11 +57,8 @@ export default function Project1() {
                 </p>
                 <p className="text-lg">
                     We can use this machine learning model to identify anomalies in real time!
-                </p>
-                <p className="text-lg">
                     Before delving into how we created it, let’s break down what this means.
                 </p>
-
             </section>
 
             {/* What is it */}
@@ -71,7 +68,7 @@ export default function Project1() {
                     An autoencoder is a type of neural network that takes in a large amount of high dimensional data and compresses the information into a smaller representation.
                     After this, it expands the compressed representation into a representation of equal size to the original.
                 </p>
-                <p className="text-lg mb-6">
+                <p className="text-lg">
                     There are <span className="font-semibold">two main parts</span> of the autoencoder:
                 </p>
                 {/* AE Image */}
@@ -101,7 +98,7 @@ export default function Project1() {
             <section className="mb-12 w-full max-w-4xl mx-auto">
                 <h2 className="text-3xl font-semibold text-white mb-6 text-center">Decoder</h2>
                 <p className="text-lg mb-6">
-                    This is where we take the compressed representation and reconstruct the original in data.
+                    This is where we take the compressed representation and reconstruct the original data.
                 </p>
                 <p className="text-lg">
                     In this example, we would take the 300 dimension representation and create a dataset with 500,000 dimensions (just like the original set).
@@ -113,9 +110,9 @@ export default function Project1() {
                 <h2 className="text-3xl font-semibold text-white mb-6 text-center">Why do we compress the data just to make one that's the same size as the original?</h2>
                 <p className="text-lg mb-6">
                     It might seem useless to compress the info and then make it just as big. Isn’t the compressed version just a worse version of the original?
-                    Compression means some data is lost, so it can’t be as good right?
+                    Compression means some data is lost so it can’t be as good, right?
                 </p>
-                <p className="text-lg mb-6">
+                <p className="text-lg mb-12">
                     The true reason is that the eventual output isn’t the important part.
                     Instead, the <span className="font-semibold">compressed version of the data</span> (also called the bottleneck) is what is important.
                 </p>
@@ -129,7 +126,7 @@ export default function Project1() {
                     We make the bottleneck larger again so we can compare the original data against the compressed version.
                     We can then use this for the anomaly detection portion of our task.
                 </p>
-                <p className="text-lg mb-6">
+                <p className="text-lg">
                     We plot the reconstructed output and the original output and look for large differences between the two.
                     If there is a big difference and the reconstruction contains the most important info, then we can identify anomalies by looking at where the differences are.
                     This is because if the most important information isn’t enough to estimate a value accurately, then it is likely not a typical value.
@@ -143,8 +140,8 @@ export default function Project1() {
                     Now that we know what an autoencoder is, we know that it uses a neural network to accomplish its goal.
                     There are many different types of neural networks though, how do we choose the best type?
                 </p>
-                <p className="text-lg mb-6">
-                    The three main types (ANNs, CNNs, and RNNs) are all commonly used in ML models. One type of RNN, the LSTM, is especially popular for time series forecasting (what we are doing) because it mitigates the vanishing gradient issue of the default RNN while also allowing us to use momentum to preserve short term AND long term trends in predictions.
+                <p className="text-lg">
+                    The three main types (ANNs, CNNs, and RNNs) are all commonly used in ML models. One type of RNN, the LSTM, is especially popular for time series forecasting (what we are doing) because it mitigates the vanishing gradient issue of the default RNN while also allowing us to use momentum to preserve short term <span className="italic">and</span> long term trends in predictions.
                     For our purposes though, with our large amount of data, an LSTM isn’t viable because of speed limitations and computational efficiency reasons.
                 </p>
             </section>
@@ -186,8 +183,8 @@ export default function Project1() {
                 <section className="w-full max-w-4xl mx-auto">
                     <h2 className="text-3xl font-semibold text-white mb-6 text-center">Final Product</h2>
                     <p className="text-lg mb-6">
-                        From implementing this transformer-based autoencoder and training it on a large amount of sensor readings, we were able to produce a prediction model that identified outliers in a computationally efficient way. There remained another big question to solve though.
-                        Even with the training and validation process, to be entirely sure we identify outliers correctly we need to train on AS MUCH data as possible to reduce the likelihood of false positives.
+                        From implementing this transformer-based autoencoder and training it on a large amount of sensor readings, we were able to produce a prediction model that identified outliers in a computationally efficient way. There remained another big question to solve, though.
+                        Even with the training and validation process, to be entirely sure we identify outliers correctly we need to train on <span className="italic">as much</span> data as possible to reduce the likelihood of false positives.
                     </p>
                     <p className="text-lg mb-6">
                         With such large amounts of data that can’t fit in memory alone, how can we use that much for training? Think about ChatGPT for example, how do you train on the whole internet if a machine can’t come close to storing all of it?

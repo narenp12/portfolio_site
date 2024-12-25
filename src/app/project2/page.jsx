@@ -71,7 +71,7 @@ export default function Project2() {
                 <p className="text-lg mb-6">
                     The basic framework I used for creating this is from a <Link
                         href="https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly"
-                        className="text-white hover:underline"
+                        className="text-white underline"
                     >
                         blog post from Stanford and MIT grad students Afshine Amidi and Shervine Amidi.
                     </Link> This framework uses TensorFlow
@@ -109,6 +109,9 @@ export default function Project2() {
                 <p className="text-lg mb-6">
                     Based on local testing, our adapted framework was able to handle data more than 10x the size of the original framework! While the upper limit is yet to be found for further testing,
                     the scalability of the tools used to build this generator gives us hope that it can serve as the foundation for a fully functional Data Generator in the future.
+                </p>
+                <p>
+                    If you would like to see the code I used for this project or have any questions, feel free to contact me at any of the places listed in my contact section!
                 </p>
             </section>
         </main>

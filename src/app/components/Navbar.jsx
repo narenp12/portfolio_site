@@ -9,24 +9,24 @@ import MenuOverlay from './MenuOverlay';
 const navLinks = [
     {
         title: "About",
-        path: "#about",
+        path: "/#about",
     },
     {
         title: "Projects",
-        path: "#projects",
+        path: "/#projects",
     },
     {
         title: "Blog",
-        path: "#blog",
+        path: "/#blog",
     },
     {
         title: "Contact",
-        path: "#contact",
+        path: "/#contact",
     }
 ]
 
 const Navbar = () => {
-    const { navbarOpen, setNavbarOpen } = useState(false);
+    const [ navbarOpen, setNavbarOpen ] = useState(false);
 
     return (
         <nav className='fixed top-0 left-0 right-0 z-10, bg-opacity-100'>

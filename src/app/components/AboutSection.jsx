@@ -122,7 +122,7 @@ const AboutSection = () => {
                     <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                     <p className='text-base md:text-lg mb-4'>
                         I'm an aspiring data scientist (hoping to get a Master's degree too) and lover of all things statistics. I was born and raised near Houston, Texas and lived there my entire life until going to college at UCLA. 
-                        My primary interests are sports (Steelers, Lakers, Manchester United, Lebron James) and anything to do with information.
+                        My primary interests are sports and anything to do with information.
                         My goal is to keep learning about these exciting fields (and really anything I can learn) for as long as I can.
                         This website is a fun little side thing for me to post about what I'm doing and just generally things I like!
                     </p>

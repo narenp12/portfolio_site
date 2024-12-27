@@ -36,13 +36,10 @@ const Projects = () => {
             <h2 className='text-center text-4xl font-bold text-white mt-4 mb-4' id="projects">
                 My Projects
             </h2>
-            { /*
-                            <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+            <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
                 <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} /> 
                 <ProjectTag onClick={handleTagChange} name="Python" isSelected={tag === "Python"} />
             </div>
-
-            */ }
 
             <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
                 {projectsData.map((project) => (

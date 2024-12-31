@@ -8,36 +8,30 @@ import Image from "next/image";
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
+    formData.append("access_key", "3daa5495-2b62-4b7b-95a9-d8e531e72f7e");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
+        Accept: "application/json"
       },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
+      body: json
+    });
+    const result = await response.json();
+    if (result.success) {
       console.log("Message sent.");
       setEmailSubmitted(true);
     }
-  };
+  }
+
 
   return (
     <section

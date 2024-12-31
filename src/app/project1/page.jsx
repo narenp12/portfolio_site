@@ -6,10 +6,10 @@ import Navbar from '../components/Navbar';
 
 export default function Project1() {
     return (
-        <main className="bg-rose-800 text-white p-6 font-sans flex flex-col items-center justify-center min-h-screen pt-20">
+        <main className=" bg-rose-800 text-white p-6 font-sans flex flex-col items-center justify-center min-h-screen pt-20">
             <Navbar />
             {/* Main Project Title */}
-            <h1 className="text-4xl font-semibold text-center text-white mb-6">Autoencoder for Anomaly Detection</h1>
+            <h1 className="mt-20 text-4xl font-semibold text-center text-white mb-6">Autoencoder for Anomaly Detection</h1>
 
             {/* Personal Role */}
             <p className="text-lg text-white mb-4 text-center italic">

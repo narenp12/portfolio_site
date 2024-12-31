@@ -11,7 +11,7 @@ export default function Post1() {
         <main className="bg-emerald-600 text-white p-6 font-sans flex flex-col items-center justify-center min-h-screen pt-20">
             <Navbar />
             {/* Main Project Title */}
-            <h1 className="text-4xl font-semibold text-center text-white mb-6">How I ended up wanting to become a data scientist (a long post)</h1>
+            <h1 className="mt-20 text-4xl font-semibold text-center text-white mb-6">How I ended up wanting to become a data scientist (a long post)</h1>
 
             {/* Personal Role */}
             <p className="text-lg text-white mb-4 text-center italic">

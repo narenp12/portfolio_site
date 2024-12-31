@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { TypeAnimation } from 'react-type-animation'
 
@@ -29,8 +30,12 @@ const HeroSection = () => {
                         Welcome to my website!
                     </p>
                     <div>
-                        <button className='px-6 py-3 rounded-full w-full mr-4 bg-blue-500 hover:bg-blue-700 text-white sm:w-fit'>Contact Me</button>
-                        <button className='px-6 py-3 rounded-full w-full bg-blue-500 hover:bg-blue-700 text-white sm:w-fit'>My Resume</button>
+                        <Link href = "/#contact">
+                            <button className='px-6 py-3 rounded-full w-full mr-4 bg-blue-500 hover:bg-blue-700 text-white sm:w-fit'>Contact Me</button>
+                        </Link>
+                        <Link href= "/Naren_Prakash_resume.pdf">
+                            <button className='px-6 py-3 rounded-full w-full bg-blue-500 hover:bg-blue-700 text-white sm:w-fit'>My Resume</button>
+                        </Link>
                     </div>
                 </div>
                 <div className='col-span-5 place-self-center mt-4 lg:mt-0'>

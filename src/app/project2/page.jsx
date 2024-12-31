@@ -9,7 +9,7 @@ export default function Project2() {
         <main className="bg-cyan-700 text-white p-6 font-sans flex flex-col items-center justify-center min-h-screen pt-20">
             <Navbar />
             {/* Main Project Title */}
-            <h1 className="text-4xl font-semibold text-center text-white mb-6">Data Generator</h1>
+            <h1 className="mt-20 text-4xl font-semibold text-center text-white mb-6">Data Generator</h1>
 
             {/* Personal Role */}
             <p className="text-lg text-white mb-4 text-center italic">

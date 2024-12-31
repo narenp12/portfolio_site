@@ -49,17 +49,17 @@ const EmailSection = () => {
           Even if it's just a question about something on here or you want to talk about any of my interests on here, feel free to reach out!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/narenp12">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/naren-prakashd5/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
       </div>
       <div>
         {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
+          <p className="text-green-500 text-base mt-2">
             Email sent successfully!
           </p>
         ) : (

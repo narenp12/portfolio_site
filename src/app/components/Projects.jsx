@@ -17,7 +17,7 @@ const projectsData = [
         description: "With such large amounts of data that can’t fit in memory alone, how can we use all of it for training?",
         image: "/project/datagen.jpg",
         tag: ["All", "Python"],
-    },
+    }, 
 ];
 
 const Projects = () => {

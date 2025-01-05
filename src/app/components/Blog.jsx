@@ -8,7 +8,14 @@ const blogData = [
         description: "My first post!",
         image: "/blog/general-fos-hero-2.png",
         tag: ["All", "Life"],
-    }
+    },
+    {
+        id: 2,
+        title: "Why I made this website",
+        description: "A winter break side project long in the making (idea wise at least)",
+        image: "/blog/website_image.png",
+        tag: ["All", "Life"],
+    },
 ];
 
 const Blog = () => {

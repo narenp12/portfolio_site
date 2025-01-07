@@ -18,7 +18,7 @@ export default function Project1() {
 
             {/* Project Tagline */}
             <p className="text-xl text-white mb-8 text-center">
-                With such large amounts of data that can’t fit in memory alone, how can we use all of it for training?
+                How do we identify potentially dangerous situations and act quickly in real time?
             </p>
 
             {/* Project Image */}

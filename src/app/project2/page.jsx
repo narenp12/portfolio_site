@@ -18,7 +18,7 @@ export default function Project2() {
 
             {/* Project Tagline */}
             <p className="text-xl text-white mb-8 text-center">
-                For when you have an amount of data that is way too big, but you still want to use it all!
+                With such large amounts of data that can’t fit in memory alone, how can we use all of it for training?
             </p>
 
             {/* Project Image */}

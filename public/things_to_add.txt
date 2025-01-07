@@ -1,0 +1,10 @@
+Expanded Online Resume tab (instead of my resume linking to a pdf, have an expanded online resume)
+
+Projects to add:
+Stocks and Financial Modeling Project - STATS C183
+Bayesian Route Model - Bruin Sports Analytics Fall 2024
+
+Maybe:
+Obesity ML model - STATS 101C
+Pokemon weight analysis - STATS 101A
+

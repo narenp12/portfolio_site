@@ -31,9 +31,23 @@ const tab_data = [
                     <div className="text-sm text-gray-400">2021 - 2025</div>
                 </li>
                 <li>
-                    Coursework
-                    <div className="text-gray-300">STATS 102B</div>
-                    <div className="text-sm text-gray-400">2021 - 2025</div>
+                    Notable Coursework
+                    <div className="text-gray-300">STATS 15 - Introduction to Data Science</div>
+                    <div className="text-gray-300">STATS 20 - Introduction to Statistical Programming with R</div>
+                    <div className="text-gray-300">STATS 21 - Python and Other Technologies for Data Science</div>
+                    <div className="text-gray-300">STATS 100A - Introduction to Probability</div>
+                    <div className="text-gray-300">STATS 100B - Introduction to Mathematical Statistics</div>
+                    <div className="text-gray-300">STATS 100C - Linear Models</div>
+                    <div className="text-gray-300">STATS 101A - Introduction to Data Analysis and Regression</div>
+                    <div className="text-gray-300">STATS 101B - Introduction to Design and Analysis of Experiment</div>
+                    <div className="text-gray-300">STATS 101C - Introduction to Statistical Models and Data Mining</div>
+                    <div className="text-gray-300">STATS 102A - Introduction to Computational Statistics with R</div>
+                    <div className="text-gray-300">STATS 102B - Introduction to Computation and Optimization for Statistics</div>
+                    <div className="text-gray-300">STATS 102C - Introduction to Monte Carlo Methods</div>
+                    <div className="text-gray-300">STATS 133 - Introduction to Text Mining Using R</div>
+                    <div className="text-gray-300">STATS 140/141 - Practice of Statistical Consulting (Parts 1 and 2)</div>
+                    <div className="text-gray-300">STATS C173/C273 - Applied Geostatistics</div>
+                    <div className="text-gray-300">STATS C183/C283 - Statistical Models in Finance</div>
                 </li>
             </ul>
         )

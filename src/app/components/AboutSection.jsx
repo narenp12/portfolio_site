@@ -12,7 +12,7 @@ const tab_data = [
             <ul className='font-medium list-disc'>
                 <li>R</li>
                 <li>Python</li>
-                <li>PostgreSQL (learning)</li>
+                <li>PostgreSQL</li>
                 <li>Monte Carlo Methods and Markov Chains</li>
                 <li>Numerical Optimization</li>
                 <li>Regression and Classification</li>

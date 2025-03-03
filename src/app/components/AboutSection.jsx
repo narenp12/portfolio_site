@@ -21,8 +21,8 @@ const tab_data = [
         )
     },
     {
-        title: "Experience",
-        id: "experience",
+        title: "Education",
+        id: "education",
         content: (
             <ul className='font-med list-disc'>
                 <li>
@@ -30,6 +30,14 @@ const tab_data = [
                     <div className="text-gray-300">Bachelor of Science - Statistics and Data Science</div>
                     <div className="text-sm text-gray-400">2021 - 2025</div>
                 </li>
+            </ul>
+        )
+    },
+    {
+        title: "Experience",
+        id: "experience",
+        content: (
+            <ul className='font-med list-disc'>         
                 <li className='py-2'>
                     Halliburton
                     <div className="text-gray-300">Data Science and Machine Learning Intern</div>

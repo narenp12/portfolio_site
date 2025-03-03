@@ -3,6 +3,9 @@ Expanded Online Resume tab (instead of my resume linking to a pdf, have an expan
 Projects to add:
 Stocks and Financial Modeling Project - STATS C183
 Bayesian Route Model - Bruin Sports Analytics Fall 2024
+140XP paper (when finished)
+133 text mining paper (when finished)
+Geostatistics project (when finished)
 
 Maybe:
 Obesity ML model - STATS 101C

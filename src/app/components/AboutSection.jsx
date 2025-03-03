@@ -30,7 +30,7 @@ const tab_data = [
                     <div className="text-gray-300">Bachelor of Science - Statistics and Data Science</div>
                     <div className="text-sm text-gray-400">2021 - 2025</div>
                 </li>
-                <li>
+                <li className='py-2'>
                     Notable Coursework
                     <div className="text-gray-300">STATS 15 - Introduction to Data Science</div>
                     <div className="text-gray-300">STATS 20 - Introduction to Statistical Programming with R</div>

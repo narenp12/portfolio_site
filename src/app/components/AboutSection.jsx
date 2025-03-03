@@ -30,6 +30,11 @@ const tab_data = [
                     <div className="text-gray-300">Bachelor of Science - Statistics and Data Science</div>
                     <div className="text-sm text-gray-400">2021 - 2025</div>
                 </li>
+                <li>
+                    Coursework
+                    <div className="text-gray-300">STATS 102B</div>
+                    <div className="text-sm text-gray-400">2021 - 2025</div>
+                </li>
             </ul>
         )
     },

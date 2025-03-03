@@ -136,6 +136,7 @@ const AboutSection = () => {
                     </p>
                     <div className='flex flex-row-met-8'>
                         <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
+                        <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Education</TabButton>
                         <TabButton selectTab={() => handleTabChange("experience")} active={tab === "experience"}>Experience</TabButton>
                         <TabButton selectTab={() => handleTabChange("interests")} active={tab === "interests"}>Interests</TabButton>
                     </div>

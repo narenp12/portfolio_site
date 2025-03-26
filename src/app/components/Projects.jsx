@@ -17,7 +17,14 @@ const projectsData = [
         description: "With such large amounts of data that can’t fit in memory alone, how can we use all of it for training?",
         image: "/project/datagen.jpg",
         tag: ["All", "Python"],
-    }, 
+    },
+    /*{
+        id: 3,
+        title: "Are Romantic Comedies Dead?: A Comprehensive Text Analysis",
+        description: "The decline of the rom-com is an incredibly popular sentiment, but can we quantify it statistically?",
+        image: "/project/proj3/stock-photo-red-hearts-background.jpg",
+        tag: ["All", "Python", "R"],
+    }*/
 ];
 
 const Projects = () => {
@@ -39,6 +46,7 @@ const Projects = () => {
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
                 <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} /> 
                 <ProjectTag onClick={handleTagChange} name="Python" isSelected={tag === "Python"} />
+                <ProjectTag onClick={handleTagChange} name="R" isSelected={tag === "R"} />
             </div>
 
             <div className='grid md:grid-cols-3 gap-8 md:gap-12'>

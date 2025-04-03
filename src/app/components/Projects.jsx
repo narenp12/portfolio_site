@@ -44,7 +44,7 @@ const Projects = () => {
             <h2 className='text-center text-4xl font-bold text-white mt-4 mb-4' id="projects">
                 My Projects
             </h2>
-            <h3 className='text-center text-4xl font-bold text-white mt-4 mb-4' id="projects">
+            <h3 className='text-center text-2xl text-white mt-4 mb-4' id="projects">
                 Check out my blog for more information
             </h3>
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>

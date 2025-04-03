@@ -4,7 +4,7 @@ const nextConfig = {
       return [
         {
           source: "/blog/:path*", // Match everything under /blog
-          destination: "https://narenblog.netlify.app/:path*", // Proxy to Netlify
+          destination: "http://blog.naren-p.com/:path*", // Proxy to Netlify
         },
       ];
     },

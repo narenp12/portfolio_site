@@ -1,16 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = {
+const nextConfig = {
     async redirects() {
       return [
         {
-          source: "/#blog",
+          source: "/blog", // Remove the hash (#)
           destination: "https://narenblog.netlify.app",
           permanent: true,
         },
       ];
     },
-  };  
-
-export default nextConfig;
+  };
+  
+  export default nextConfig;
+  

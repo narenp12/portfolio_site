@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async redirects() {
+    async rewrites() {
       return [
         {
-          source: "/blog", // Remove the hash (#)
-          destination: "https://narenblog.netlify.app",
-          permanent: true,
+          source: "/blog/:path*", // Match everything under /blog
+          destination: "https://narenblog.netlify.app/:path*", // Proxy to Netlify
         },
       ];
     },
   };
   
-  export default nextConfig;
-  
+  export default nextConfig;  

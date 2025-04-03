@@ -17,7 +17,7 @@ const navLinks = [
     },
     {
         title: "Blog",
-        path: "blog.naren-p.com",
+        path: "https://blog.naren-p.com",
     },
     {
         title: "Contact",
